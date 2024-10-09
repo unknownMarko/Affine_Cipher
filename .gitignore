@@ -36,7 +36,3 @@ build/
 
 ### Mac OS ###
 .DS_Store
-
-### Libraries ###
-# Need to configure openjdk23 JavaFX
-#/lib
