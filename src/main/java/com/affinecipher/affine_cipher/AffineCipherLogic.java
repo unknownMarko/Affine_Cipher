@@ -89,13 +89,13 @@ public class AffineCipherLogic {
             if (index >= 0) {
                 int result = (keyA * index + keyB) % alphabet.length();
                 if (i % 5 == 0 && i != 0)  output.append(" ");
-                output.append((char)(alphabet.charAt(result)));
-                System.out.println(formattedInput.charAt(i) + " = " + keyA + "*" + (int)(formattedInput.charAt(i)-65) + "+" + keyB + " mod 26 = " + result);
+                output.append(alphabet.charAt(result));
+                System.out.println(formattedInput.charAt(i) + " = " + keyA + "*" + (formattedInput.charAt(i) - 65) + "+" + keyB + " mod 26 = " + result);
             } else {
                 output.append(formattedInput.charAt(i));
             }
         }
-        System.out.println("Encrypted = " + output.toString());
+        System.out.println("Encrypted = " + output);
         return output.toString();
     }
 
@@ -115,12 +115,12 @@ public class AffineCipherLogic {
                     int result = ((modInverse(keyA, aLen) * (aIndexOfChar - keyB) % aLen) + aLen) % aLen;
                     //Printing equations with variables
                     System.out.println(modInverse(keyA, aLen) + "*(" + aIndexOfChar + "-" + keyB + ")%" + alphabet.length() + " = " + result);
-                    output.append((char)alphabet.charAt(result));
+                    output.append(alphabet.charAt(result));
                 }
             }
         }
 
-        System.out.println("Decrypted = " + output.toString());
+        System.out.println("Decrypted = " + output);
 
         output = new StringBuilder(output.toString().replace("XMEDZERAX", " "));
 
