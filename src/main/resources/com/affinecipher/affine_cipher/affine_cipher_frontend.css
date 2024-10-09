@@ -1,0 +1,8 @@
+.background_pane {
+    -fx-background-color: #121420;
+}
+
+.textfields {
+    -fx-background-color: #1B2432;
+    -fx-text-inner-color: #C38783;
+}
