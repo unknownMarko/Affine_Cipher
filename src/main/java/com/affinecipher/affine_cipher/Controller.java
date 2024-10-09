@@ -200,7 +200,7 @@ public class Controller {
     //Calling decrypt func and showing result in GUI
     @FXML
     void handleDecryptButton(ActionEvent event) {
-        if (!field_output.getText().isEmpty()) {
+        if (!field_input.getText().isEmpty()) {
             field_output.setText(AffineCipherLogic.decrypt(
                     field_input.getText(),
                     Integer.parseInt(field_key_a.getText()),
