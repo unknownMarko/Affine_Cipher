@@ -1,3 +1,2 @@
 Manifest-Version: 1.0
-Main-Class: com.affinecipher.affine_cipher.AffineCipher
-
+Main-Class: com.affinecipher.affine_cipher.Launcher

@@ -12,7 +12,7 @@ Affine ciphers combine both a multiplication and an addition, making it a more c
     mvn clean install
 
 ### Widnows Project Setup
-    Install OpenJDK (ver. 22+) (https://www.oracle.com/java/technologies/downloads/)
+    Install OpenJDK (ver. 23) (https://www.oracle.com/java/technologies/downloads/)
     Install Maven (https://maven.apache.org/download.cgi)
     In project folder terminal: mvn clean install
 
