@@ -65,6 +65,8 @@ public class AffineCipherLogic {
                 }
             }
         }
+        System.out.println("Filtered = " + output);
+
         return output.toString();
     }
 
@@ -107,7 +109,7 @@ public class AffineCipherLogic {
             if (inputString.charAt(i) != ' ') {
                 int aIndexOfChar = alphabet.indexOf(inputString.charAt(i));
 
-                if ((inputString.charAt(i) >= '0' && inputString.charAt(i) <= '9') && aIndexOfChar == -1) {
+                if (aIndexOfChar == -1) {
                     output.append(inputString.charAt(i));
                 } else {
                     int result = ((modInverse(keyA, aLen) * (aIndexOfChar - keyB) % aLen) + aLen) % aLen;
