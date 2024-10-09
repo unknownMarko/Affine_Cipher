@@ -22,7 +22,6 @@
 
 package com.affinecipher.affine_cipher;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -186,7 +185,7 @@ public class Controller {
 
     //Calling encrypt func and showing result in GUI
     @FXML
-    void handleEncryptButton(ActionEvent event) {
+    void handleEncryptButton() {
         if (!field_input.getText().isEmpty()) {
             field_output.setText(AffineCipherLogic.encrypt(
                     field_input.getText(),
@@ -199,7 +198,7 @@ public class Controller {
 
     //Calling decrypt func and showing result in GUI
     @FXML
-    void handleDecryptButton(ActionEvent event) {
+    void handleDecryptButton() {
         if (!field_input.getText().isEmpty()) {
             field_output.setText(AffineCipherLogic.decrypt(
                     field_input.getText(),
