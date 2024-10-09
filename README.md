@@ -1,5 +1,5 @@
 # Affine Cipher
-![](PhotoPath)
+![](https://github.com/unknownMarko/Affine_Cipher/blob/main/screenshots/screenshot_gui.png)
 
 The affine cipher is a type of substitution cipher based on mathematical functions. It encrypts letters by using a linear transformation of the form:
 
