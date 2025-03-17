@@ -1,7 +1,7 @@
 # Affine Cipher
 ![](https://github.com/unknownMarko/Affine_Cipher/blob/main/screenshots/screenshot_gui.png)
 
-The affine cipher is a type of substitution cipher based on mathematical functions. It encrypts letters by using a linear transformation of the form:
+Affine cipher is a type of substitution cipher based on mathematical functions. It encrypts letters by using a linear transformation of the form:
 
 Affine ciphers combine both a multiplication and an addition, making it a more complex variation of the Caesar cipher, but still relatively easy to break through frequency analysis.
 
